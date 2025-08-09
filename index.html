@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI YouTube Script Expert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI YouTube Script Expert</h1>
+        <p>Paste a transcript from a YouTuber you admire to learn their style. Then, let the AI help you write a script in that same tone!</p>
+
+        <!-- Step 1: Analyze Style -->
+        <div id="step1">
+            <h2>Step 1: Analyze a YouTuber's Style</h2>
+            <textarea id="transcriptInput" placeholder="Paste the full YouTube video transcript here..."></textarea>
+            <button id="analyzeBtn">Analyze Style</button>
+        </div>
+
+        <!-- Step 2: Generate Your Script -->
+        <div id="step2" class="hidden">
+            <h2>Step 2: Generate Your New Script</h2>
+            <div class="style-guide">
+                <h3>Analyzed Style Guide:</h3>
+                <pre id="styleGuideOutput"></pre>
+            </div>
+            <input type="text" id="topicInput" placeholder="Enter your new video topic or title...">
+            <button id="generateBtn">Generate Script Outline</button>
+        </div>
+        
+        <!-- Loading Indicator and Results -->
+        <div id="loading" class="hidden">Analyzing... Please wait.</div>
+        <div id="results">
+            <h2>Your AI-Generated Script:</h2>
+            <pre id="scriptOutput"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
